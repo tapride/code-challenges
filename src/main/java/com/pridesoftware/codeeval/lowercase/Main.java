@@ -24,6 +24,6 @@ public class Main {
     }
 
     public static String processLine(String line){
-        return null;
+        return line.toLowerCase();
     }
 }
