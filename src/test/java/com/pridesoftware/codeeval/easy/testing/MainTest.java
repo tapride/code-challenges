@@ -91,7 +91,7 @@ public class MainTest {
     @Test
     public void testRateIssue6(){
         String inputExpectedValue = "Hello Codeeval";
-        String inputActualValue =   "hEllo cOdEeval";
+        String inputActualValue =   "HEllo cOdEeval";
         String expected = "Medium";
         String actual = Main.rateIssue(inputActualValue, inputExpectedValue);
         Assert.assertEquals(expected, actual);
@@ -100,7 +100,7 @@ public class MainTest {
     @Test
     public void testRateIssue7(){
         String inputExpectedValue = "Hello Codeeval";
-        String inputActualValue =   "hELLo coDEeval";
+        String inputActualValue =   "heLLo coDEeval";
         String expected = "High"; // <=6
         String actual = Main.rateIssue(inputActualValue, inputExpectedValue);
         Assert.assertEquals(expected, actual);
@@ -113,7 +113,7 @@ public class MainTest {
     public void testCountDefects1(){
         String inputExpectedValue = "Hello Codeeval";
         String inputActualValue =   "Heelo Codevval";
-        int expected = 1;
+        int expected = 2;
         int actual = Main.countDefects(inputActualValue, inputExpectedValue);
         Assert.assertEquals(expected, actual);
     }
@@ -122,7 +122,7 @@ public class MainTest {
     public void testCountDefects2(){
         String inputExpectedValue = "Hello Codeeval";
         String inputActualValue =   "hELLO cODEEVAL";
-        int expected = 12;
+        int expected = 13;
         int actual = Main.countDefects(inputActualValue, inputExpectedValue);
         Assert.assertEquals(expected, actual);
     }

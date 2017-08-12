@@ -59,14 +59,53 @@ public class Main {
     }
 
     public static String processLine(String line){
-        return line;
+
+        String[] lineParts = line.split("\\|");
+
+        return rateIssue(lineParts[0].trim(), lineParts[1].trim());
     }
 
     public static String rateIssue(String actual, String expected){
-        return "";
+        int defects = countDefects(actual, expected);
+
+        if (defects < 0 ){
+            return null;
+        }
+        else if (defects == 0){
+            return "Done";
+        }
+        else if (defects <= 2){
+            return "Low";
+        }
+        else if (defects <= 4){
+            return "Medium";
+        }
+        else if (defects <= 6){
+            return "High";
+        }
+        else{
+            return "Critical";
+        }
+
     }
 
     public static int countDefects(String actual, String expected){
-        return -1;
+
+        if (actual.length() != expected.length()) {
+            return -1;
+        }
+
+        char[] charActual = actual.toCharArray();
+        char[] charExpected = expected.toCharArray();
+
+        int defects = 0;
+
+        for (int i = 0; i < charActual.length; i++){
+            if (charActual[i] != charExpected[i]){
+                defects++;
+            }
+        }
+
+        return defects;
     }
 }
