@@ -1,4 +1,4 @@
-package com.pridesoftware.codeeval.testing;
+package com.pridesoftware.codeeval.easy.testing;
 
 import com.pridesoftware.codeeval.lowercase.Main;
 import org.junit.After;
@@ -37,6 +37,11 @@ public class MainTest {
         Main.main(args);
         String actual = outContent.toString();
         Assert.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void testCountDefects1(){
 
     }
 }

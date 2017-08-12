@@ -1,4 +1,4 @@
-package com.pridesoftware.codeeval.testing;
+package com.pridesoftware.codeeval.easy.testing;
 
 /**
  * TESTING
@@ -60,5 +60,13 @@ public class Main {
 
     public static String processLine(String line){
         return line;
+    }
+
+    public static String rateIssue(String actual, String expected){
+        return "";
+    }
+
+    public static int countDefects(String actual, String expected){
+        return 0;
     }
 }
