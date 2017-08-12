@@ -1,4 +1,4 @@
-package com.pridesoftware.codeeval.cleanupthewords;
+package com.pridesoftware.codeeval.easy.cleanupthewords;
 
 import org.junit.After;
 import org.junit.Assert;

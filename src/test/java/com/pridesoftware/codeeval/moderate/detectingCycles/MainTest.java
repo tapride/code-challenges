@@ -1,4 +1,4 @@
-package com.pridesoftware.codeeval.detectingCycles;
+package com.pridesoftware.codeeval.moderate.detectingCycles;
 
 import org.junit.After;
 import org.junit.Assert;

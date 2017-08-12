@@ -29,7 +29,7 @@
  *
  */
 
-package com.pridesoftware.codeeval.detectingCycles;
+package com.pridesoftware.codeeval.moderate.detectingCycles;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

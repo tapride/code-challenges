@@ -25,7 +25,7 @@
  *
  */
 
-package com.pridesoftware.codeeval.cleanupthewords;
+package com.pridesoftware.codeeval.easy.cleanupthewords;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
