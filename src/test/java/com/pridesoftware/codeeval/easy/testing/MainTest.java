@@ -1,6 +1,5 @@
 package com.pridesoftware.codeeval.easy.testing;
 
-import com.pridesoftware.codeeval.lowercase.Main;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
