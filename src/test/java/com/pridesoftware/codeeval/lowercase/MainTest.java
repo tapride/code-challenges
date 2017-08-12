@@ -2,7 +2,11 @@ package com.pridesoftware.codeeval.lowercase;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import org.junit.*;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
 
 public class MainTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
@@ -22,10 +26,11 @@ public class MainTest {
 
     @Test
     public void testMain() throws Exception {
-        String[] args = new String[]{"input/CleanUpTheWords/input.txt"};
+        String[] args = new String[]{"input/Lowercase/input.txt"};
 
         String expected =
-                "hello world" + System.getProperty("line.separator") ;
+                "hello codeeval" + System.getProperty("line.separator") +
+                        "this is some text" + System.getProperty("line.separator");
 
         Main.main(args);
         String actual = outContent.toString();
