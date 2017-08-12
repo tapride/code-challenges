@@ -67,6 +67,6 @@ public class Main {
     }
 
     public static int countDefects(String actual, String expected){
-        return 0;
+        return -1;
     }
 }
