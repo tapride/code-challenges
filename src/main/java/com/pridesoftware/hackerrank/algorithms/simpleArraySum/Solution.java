@@ -1,16 +1,16 @@
 package com.pridesoftware.hackerrank.algorithms.simpleArraySum;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class Solution {
 
     static int simpleArraySum(int n, int[] ar) {
         // Complete this function
-        return 0;
+        int sum = 0;
+        for (int i: ar){
+           sum += i;
+        }
+        return sum;
     }
 
     public static void main(String[] args) {
