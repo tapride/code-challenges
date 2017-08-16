@@ -46,6 +46,14 @@ public class Main {
     }
 
     protected static String sumOfDigits(String line){
-        return "";
+        char[] numbers = line.toCharArray();
+        int sum = 0;
+
+        for (char c: numbers) {
+            int i = Integer.parseInt(String.valueOf(c));
+            sum += i;
+        }
+
+        return String.valueOf(sum);
     }
 }

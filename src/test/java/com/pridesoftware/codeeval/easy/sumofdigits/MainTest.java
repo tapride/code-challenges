@@ -32,7 +32,7 @@ public class MainTest {
 
         String expected =
                 "5" + System.getProperty("line.separator") +
-                "16" + System.getProperty("line.separator") ;
+                "19" + System.getProperty("line.separator") ;
 
         outContent.flush();
         errContent.flush();
