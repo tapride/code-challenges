@@ -65,11 +65,37 @@ public class Main {
     }
 
     protected static String reverseAndAdd(String line){
+        int itterations = 0;
+
+        long value = Long.valueOf(line);
+
+        for (int i = 0 ; i <= 100; i++ ){
+            value = addReverse(value);
+            itterations++;
+
+            if (isPalindrome(value)){
+                return String.valueOf(itterations) + " " + String.valueOf(value);
+            }
+        }
 
         return "";
     }
 
-    public static boolean isPalindrome(int aNumber){
+    protected static long addReverse(long value){
+        String[] strValue = String.valueOf(value).split("");
+        StringBuilder strBld = new StringBuilder();
+
+        for (int i = strValue.length-1; i >= 0; i--){
+            strBld.append(strValue[i]);
+        }
+
+        long value2 = Long.parseLong(strBld.toString());
+
+        return value + value2;
+
+    }
+
+    public static boolean isPalindrome(long aNumber){
         boolean isPalindrome = true;
         String aNumberString = String.valueOf(aNumber);
 
