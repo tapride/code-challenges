@@ -1,4 +1,4 @@
-package com.pridesoftware.hackerrank.algorithms.
+package com.pridesoftware.hackerrank.algorithms.simpleArraySum;
 
 import java.io.*;
 import java.util.*;
@@ -10,6 +10,7 @@ public class Solution {
 
     static int simpleArraySum(int n, int[] ar) {
         // Complete this function
+        return 0;
     }
 
     public static void main(String[] args) {
