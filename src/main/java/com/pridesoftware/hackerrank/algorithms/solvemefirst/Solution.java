@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Solution {
 
     static int solveMeFirst(int a, int b) {
-        return 0;
+        return a + b;
     }
 
 
