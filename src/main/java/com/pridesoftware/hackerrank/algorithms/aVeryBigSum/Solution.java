@@ -5,8 +5,11 @@ import java.util.Scanner;
 public class Solution {
 
     static long aVeryBigSum(int n, long[] ar) {
-        // Complete this function
-        return 0;
+        long sum = 0L;
+        for (long l: ar){
+            sum += l;
+        }
+        return sum;
     }
 
     public static void main(String[] args) {
