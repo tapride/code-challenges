@@ -29,7 +29,7 @@ public class MainTest {
 
     @Test
     public void testMain() throws Exception {
-        String[] args = new String[]{"input/HappyNumbers/input.txt"};
+        String[] args = new String[]{"input/code-eval/HappyNumbers/input.txt"};
 
         String expected =
                 "1" + System.getProperty("line.separator") +

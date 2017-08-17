@@ -27,7 +27,7 @@ public class MainTest {
 
     @Test
     public void testMain() throws Exception {
-        String[] args = new String[]{"input/CleanUpTheWords/input.txt"};
+        String[] args = new String[]{"input/code-eval/CleanUpTheWords/input.txt"};
 
         String expected =
                 "hello world" + System.getProperty("line.separator") +

@@ -26,7 +26,7 @@ public class MainTest {
 
     @Test
     public void testMain() throws Exception {
-        String[] args = new String[]{"input/Lowercase/input.txt"};
+        String[] args = new String[]{"input/code-eval/Lowercase/input.txt"};
 
         String expected =
                 "hello codeeval" + System.getProperty("line.separator") +

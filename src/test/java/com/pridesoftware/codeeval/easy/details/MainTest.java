@@ -30,7 +30,7 @@ public class MainTest {
 
     @Test
     public void testMain() throws Exception {
-        String[] args = new String[]{"input/details/input.txt"};
+        String[] args = new String[]{"input/code-eval/details/input.txt"};
 
         String expected =
                 "1" + System.getProperty("line.separator") +

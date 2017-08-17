@@ -26,7 +26,7 @@ public class MainTest {
 
     @Test
     public void testMain() throws Exception {
-        String[] args = new String[]{"input/ReverseAndAdd/input.txt"};
+        String[] args = new String[]{"input/code-eval/ReverseAndAdd/input.txt"};
 
         String expected =
                 "4 9339" + System.getProperty("line.separator");

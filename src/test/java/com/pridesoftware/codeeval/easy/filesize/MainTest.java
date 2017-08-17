@@ -28,7 +28,7 @@ public class MainTest {
 
     @Test
     public void testMain() throws Exception {
-        String[] args = new String[]{"input/FileSize/test1.txt"};
+        String[] args = new String[]{"input/code-eval/FileSize/test1.txt"};
 
         String expected =
                 "12" + System.getProperty("line.separator") ;
@@ -41,7 +41,7 @@ public class MainTest {
 
     @Test
     public void testGetFileSize(){
-        String input = "input/FileSize/test1.txt";
+        String input = "input/code-eval/FileSize/test1.txt";
         int expected = 12;
         int actual = Main.getFileSize(input);
         Assert.assertEquals(expected, actual);

@@ -29,7 +29,7 @@ public class mainTest {
 
     @Test
     public void testMain() throws Exception {
-        String[] args = new String[]{"input/ReverseWords/input.txt"};
+        String[] args = new String[]{"input/code-eval/ReverseWords/input.txt"};
 
         String expected =
                 "World Hello" + System.getProperty("line.separator") +

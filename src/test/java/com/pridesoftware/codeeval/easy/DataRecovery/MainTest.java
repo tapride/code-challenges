@@ -27,7 +27,7 @@ public class MainTest {
 
     @Test
     public void testMain() throws Exception {
-        String[] args = new String[]{"input/DataRecovery/input.txt"};
+        String[] args = new String[]{"input/code-eval/DataRecovery/input.txt"};
 
         String expected =
             "However, it was not implemented until 1998 and 2000" + System.getProperty("line.separator") +

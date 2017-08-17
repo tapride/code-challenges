@@ -27,7 +27,7 @@ public class MainTest {
     @Test
     public void testMain() throws Exception {
 
-        String[] args = new String[]{"input/BitPositions/input.txt"};
+        String[] args = new String[]{"input/code-eval/BitPositions/input.txt"};
 
         String expected =
                 "true" + System.getProperty("line.separator") +

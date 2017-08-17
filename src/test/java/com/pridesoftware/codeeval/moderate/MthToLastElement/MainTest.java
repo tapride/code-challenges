@@ -27,7 +27,7 @@ public class MainTest {
 
     @Test
     public void testMain() throws Exception {
-        String[] args = new String[]{"input/MthToLastElement/input.txt"};
+        String[] args = new String[]{"input/code-eval/MthToLastElement/input.txt"};
 
         String expected =
                 "a" + System.getProperty("line.separator") +

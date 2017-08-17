@@ -27,7 +27,7 @@ public class MainTest {
     @Test
     public void testMain() throws Exception {
 
-        String[] args = new String[]{"input/DetectingCycles/input.txt"};
+        String[] args = new String[]{"input/code-eval/DetectingCycles/input.txt"};
 
         String expected =
                 "6 3 1" + System.getProperty("line.separator") +
