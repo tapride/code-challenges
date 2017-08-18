@@ -22,6 +22,40 @@ public class Solution {
         for (int i = 0; i < size; i++){
             arr[i] = in.nextInt();
         }
-        
+
+        System.out.println(String.format("%7.6f",fractionPositive(arr)));
+        System.out.println(String.format("%7.6f",fractionNegative(arr)));
+        System.out.println(String.format("%7.6f",fractionZero(arr)));
+    }
+
+    protected static double fractionPositive(int[] arr){
+        int count = 0;
+        int total = arr.length;
+        for (int i = 0; i < arr.length; i++){
+            if (arr[i] > 0)
+                count++;
+        }
+        return (double)count / (double)total;
+
+    }
+
+    protected static double fractionNegative(int[] arr){
+        int count = 0;
+        int total = arr.length;
+        for (int i = 0; i < arr.length; i++){
+            if (arr[i] < 0)
+                count++;
+        }
+        return (double)count / (double)total;
+    }
+
+    protected static double fractionZero(int[] arr){
+        int count = 0;
+        int total = arr.length;
+        for (int i = 0; i < arr.length; i++){
+            if (arr[i] == 0)
+                count++;
+        }
+        return (double)count / (double)total;
     }
 }

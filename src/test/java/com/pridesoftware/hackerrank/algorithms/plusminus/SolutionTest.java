@@ -30,4 +30,29 @@ public class SolutionTest {
         Assert.assertEquals(expectedOutput, actualOutput);
     }
 
+    @Test
+    public void testFractionPositive1(){
+        int[] inputArr = new int[]{-4, 3, -9, 0, 4, 1};
+        double outputExpected = 0.5;
+        double outputActual = Solution.fractionPositive(inputArr);
+        Assert.assertEquals(outputExpected, outputActual, 0.000001);
+    }
+
+    @Test
+    public void testFractionNegative1(){
+        int[] inputArr = new int[]{-4, 3, -9, 0, 4, 1};
+        double outputExpected = 0.333333;
+        double outputActual = Solution.fractionNegative(inputArr);
+        Assert.assertEquals(outputExpected, outputActual, 0.000001);
+    }
+
+    @Test
+    public void testFractionZero(){
+        int[] inputArr = new int[]{-4, 3, -9, 0, 4, 1};
+        double outputExpected = 0.166667;
+        double outputActual = Solution.fractionZero(inputArr);
+        Assert.assertEquals(outputExpected, outputActual, 0.000001);
+    }
+
+
 }
